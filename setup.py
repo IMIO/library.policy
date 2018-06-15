@@ -44,6 +44,11 @@ setup(
         'Products.GenericSetup>=1.8.2',
         'setuptools',
         'z3c.jbot',
+        'eea.facetednavigation',
+        'collective.faceted.taxonomywidget',
+        'collective.taxonomy',
+        'plone.app.imagecropping',
+        'library.theme',
     ],
     extras_require={
         'test': [
