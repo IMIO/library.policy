@@ -48,6 +48,7 @@ setup(
         'collective.faceted.taxonomywidget',
         'collective.taxonomy',
         'plone.app.imagecropping',
+        'plone.app.mosaic',
         'library.theme',
     ],
     extras_require={
