@@ -30,7 +30,7 @@ setup(
     ],
     keywords='Python Plone',
     author='Nicolas Demonte',
-    author_email='daggelpop@gmail.com',
+    author_email='support@imio.be',
     url='https://pypi.python.org/pypi/library.policy',
     license='GPL version 2',
     packages=find_packages('src', exclude=['ez_setup']),
