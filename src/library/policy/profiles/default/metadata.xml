@@ -3,6 +3,7 @@
   <version>1000</version>
   <dependencies>
     <dependency>profile-eea.facetednavigation:default</dependency>
+    <dependency>profile-collective.easyform:default</dependency>
     <dependency>profile-collective.taxonomy:default</dependency>
     <dependency>profile-collective.faceted.taxonomywidget:plone5</dependency>
     <dependency>profile-plone.app.imagecropping:default</dependency>

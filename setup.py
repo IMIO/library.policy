@@ -50,6 +50,7 @@ setup(
         'plone.app.imagecropping',
         'plone.app.mosaic',
         'library.theme',
+        'collective.easyform',
     ],
     extras_require={
         'test': [
