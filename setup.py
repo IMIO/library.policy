@@ -51,6 +51,7 @@ setup(
         'plone.app.mosaic',
         'library.theme',
         'collective.behavior.banner',
+        'collective.behavior.gallery',
         'collective.easyform',
     ],
     extras_require={
