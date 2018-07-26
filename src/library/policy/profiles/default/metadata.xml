@@ -10,6 +10,7 @@
     <dependency>profile-collective.faceted.taxonomywidget:plone5</dependency>
     <dependency>profile-plone.app.imagecropping:default</dependency>
     <dependency>profile-plone.app.mosaic:default</dependency>
+    <dependency>profile-library.core:default</dependency>
     <dependency>profile-library.theme:default</dependency>
   </dependencies>
 </metadata>
