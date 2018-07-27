@@ -8,6 +8,9 @@ Changelog
 - Add library.core
   [daggelpop]
 
+- Add collective.preventactions
+  [daggelpop]
+
 
 1.0a2 (2018-07-10)
 ------------------

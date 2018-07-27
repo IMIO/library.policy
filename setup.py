@@ -54,6 +54,7 @@ setup(
         'collective.behavior.banner',
         'collective.behavior.gallery',
         'collective.easyform',
+        'collective.preventactions',
     ],
     extras_require={
         'test': [
