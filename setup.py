@@ -55,6 +55,7 @@ setup(
         'collective.behavior.gallery',
         'collective.easyform',
         'collective.preventactions',
+        'collective.z3cform.select2',
     ],
     extras_require={
         'test': [

@@ -5,13 +5,15 @@ Changelog
 1.0a5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add collective.z3cform.select2
+  [daggelpop]
 
 
 1.0a4 (2018-08-06)
 ------------------
 
-- Nothing changed yet.
+- Fix ZCML imports
+  [vpiret]
 
 
 1.0a3 (2018-07-27)
