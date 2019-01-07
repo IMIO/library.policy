@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a6 (unreleased)
+1.0a6 (2019-01-07)
 ------------------
 
 - Add collective.cookiecuttr dependency.
