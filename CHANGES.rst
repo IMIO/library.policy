@@ -5,7 +5,8 @@ Changelog
 1.0a6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add collective.cookiecuttr dependency.
+  [bsuttor]
 
 
 1.0a5 (2018-09-04)
@@ -50,3 +51,4 @@ Changelog
 
 - Initial release.
   [daggelpop]
+
