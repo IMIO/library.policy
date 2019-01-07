@@ -56,6 +56,7 @@ setup(
         'collective.easyform',
         'collective.preventactions',
         'collective.z3cform.select2',
+        'collective.cookiecuttr',
     ],
     extras_require={
         'test': [
