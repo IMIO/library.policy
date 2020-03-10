@@ -5,7 +5,8 @@ Changelog
 1.0a7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add plone.formwidget.recaptcha dependency.
+  [bsuttor]
 
 
 1.0a6 (2019-01-07)
