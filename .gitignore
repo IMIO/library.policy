@@ -34,3 +34,5 @@ report.html
 !.gitkeep
 !.travis.yml
 !src/library
+share/
+pyvenv.cfg

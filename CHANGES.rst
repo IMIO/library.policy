@@ -5,7 +5,11 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Set recaptcha as default captcha settings on plone.app.discussion.
+  [bsuttor]
+
+- Install plone.formwidget.recaptcha during policy installation.
+  [bsuttor]
 
 
 1.1.0 (2020-03-11)
