@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a7 (unreleased)
+1.1.0 (2020-03-11)
 ------------------
 
 - Add plone.formwidget.recaptcha dependency.
