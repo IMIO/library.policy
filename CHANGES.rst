@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.1 (unreleased)
+1.1.1 (2020-03-12)
 ------------------
 
 - Set recaptcha as default captcha settings on plone.app.discussion.
