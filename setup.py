@@ -48,6 +48,7 @@ setup(
         "setuptools",
         "z3c.jbot",
         "eea.facetednavigation",
+        "collective.faceted.map",
         "collective.faceted.taxonomywidget",
         "collective.taxonomy",
         "plone.app.imagecropping",

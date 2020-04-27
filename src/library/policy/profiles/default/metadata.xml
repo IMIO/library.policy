@@ -8,6 +8,7 @@
     <dependency>profile-collective.easyform:default</dependency>
     <dependency>profile-collective.preventactions:default</dependency>
     <dependency>profile-collective.taxonomy:default</dependency>
+    <dependency>profile-collective.faceted.map:plone5</dependency>
     <dependency>profile-collective.faceted.taxonomywidget:plone5</dependency>
     <dependency>profile-collective.z3cform.select2:default</dependency>
     <dependency>profile-plone.app.imagecropping:default</dependency>

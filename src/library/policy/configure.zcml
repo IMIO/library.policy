@@ -12,8 +12,8 @@
     Better import explicite packages or configurations ;)
   -->
   <!--<includeDependencies package="." />-->
-
   <include package="eea.facetednavigation" />
+  <include package="collective.faceted.map" />
   <include package="collective.faceted.taxonomywidget" />
   <include package="collective.taxonomy" />
   <include package="plone.app.imagecropping" />

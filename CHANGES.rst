@@ -5,7 +5,8 @@ Changelog
 1.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add new package : collective.faceted.map. To geolocalize "patrimoine" type.
+  [boulch]
 
 
 1.1.1 (2020-03-12)
