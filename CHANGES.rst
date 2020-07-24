@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.2 (unreleased)
+1.1.2 (2020-07-24)
 ------------------
 
 - Add new package : collective.faceted.map. To geolocalize "patrimoine" type.
