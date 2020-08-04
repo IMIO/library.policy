@@ -29,6 +29,7 @@
   <include package="plone.formwidget.recaptcha" />
 
   <include package=".browser" />
+  <include package=".faceted" />
 
   <include file="permissions.zcml" />
 
