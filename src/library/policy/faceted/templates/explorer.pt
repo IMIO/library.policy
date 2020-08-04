@@ -61,7 +61,7 @@
 
                       <div class="items-content">
                         <div class="image">
-                          <img width="200px" style="border: none" tal:condition="is_image" tal:attributes="src string:${brain/getURL}/@@images/image"/>
+                          <img style="border: none" tal:condition="is_image" tal:attributes="src string:${brain/getURL}/@@images/image"/>
                         </div>
                         <div class="text">
                           <h4 tal:content="brain/pretty_title_or_id|string:">Title</h4>
