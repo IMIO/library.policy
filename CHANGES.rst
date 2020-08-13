@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.3 (unreleased)
+1.1.3 (2020-08-13)
 ------------------
 
 - [BIBLI-12] : Directly apply custom faceted view on "explorer" folder.
