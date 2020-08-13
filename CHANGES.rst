@@ -7,6 +7,8 @@ Changelog
 
 - [BIBLI-12] : Directly apply custom faceted view on "explorer" folder.
   [boulch]
+- [BIBLI-12] : Register custom faceted "map" template
+  [boulch]
 
 
 1.1.2 (2020-07-24)
