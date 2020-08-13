@@ -38,8 +38,8 @@ class ExplorerView(MapView):
                 "geolocation.default_map_layer", default=[]
             ),
             "map_layers": [
-                {"title": translate(_(l), context=self.request), "id": l}
-                for l in map_layers
+                {"title": translate(_(map_layer), context=self.request), "id": map_layer}
+                for map_layer in map_layers
             ],
             "useCluster": False,
         }
