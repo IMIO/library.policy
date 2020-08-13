@@ -34,7 +34,7 @@ def uninstall(context):
 
 
 def add_taxonomies():
-    current_lang = api.portal.get_current_language()[:2]
+    current_lang = api.portal.get_default_language()[:2]
     # dossiers, patrimoine, villages, periodes
     data_dossiers = {
         "taxonomy": "dossiers",
