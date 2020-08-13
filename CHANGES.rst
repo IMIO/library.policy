@@ -5,7 +5,8 @@ Changelog
 1.1.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- [BIBLI-12] : Directly apply custom faceted view on "explorer" folder.
+  [boulch]
 
 
 1.1.2 (2020-07-24)
@@ -81,4 +82,3 @@ Changelog
 
 - Initial release.
   [daggelpop]
-
