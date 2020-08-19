@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.5 (2020-08-19)
+1.1.5 (unreleased)
 ------------------
 
 - Nothing changed yet.
