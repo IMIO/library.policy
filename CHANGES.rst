@@ -5,7 +5,7 @@ Changelog
 1.1.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- [BIBLI-25] : Refactor explorer template to fix a bug when loading map.
 
 
 1.1.3 (2020-08-13)

@@ -1,12 +1,10 @@
 <html
-  xmlns="http://www.w3.org/1999/xhtml"
-  xml:lang="en"
-  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
   xmlns:tal="http://xml.zope.org/namespaces/tal"
   xmlns:metal="http://xml.zope.org/namespaces/metal"
   xmlns:i18n="http://xml.zope.org/namespaces/i18n"
   metal:use-macro="context/main_template/macros/master"
-  i18n:domain="collective.faceted.map">
+  i18n:domain="library.policy">
 
   <body>
     <metal:content-core fill-slot="content-core">
@@ -24,29 +22,21 @@
 
           <div class="eea-preview-items">
 
-            <tal:condition i18n:domain="collective.faceted.map">
               <div class="button-map-content">
                 <button i18n:translate="hide-map" class="button-map hide-map">Hide map</button>
                 <button i18n:translate="display-map" class="button-map show-map" style="display: none;">Display map</button>
               </div>
-              <div id="faceted-map-container" class="pat-leaflet" style="width: 100%; height:40em;" data-pat-leaflet="${self/map_configuration}" data-geojson=''></div>
-              <script type="text/javascript">
-                jQuery(document).ready(function ($) {
-                  $('.button-map').click(function () {
-                    $('.button-map').toggle();
-                    $('#faceted-map-container').toggleClass('hidden');
-                  });
-                });
-              </script>
-            </tal:condition>
 
-            <div id="faceted-results-items" class="no-map" data-geojson='' tal:attributes="data-geojson python:map_view.data_geo(batch)">
+              <div id="faceted-map" class="pat-leaflet" style="width: 100%; height:40em;" data-pat-leaflet="${self/map_configuration}" data-geojson=''
+              tal:attributes="data-geojson python:map_view.data_geo(batch)"></div>
+
+              <div id="faceted-results" class="no-map">
               <tal:entries repeat="brain batch">
                 <tal:entry tal:define="obj brain/getObject|nothing" tal:condition="python:obj is not None">
 
-                  <div
-                    class=""
+                  <div class="faceted-explorer"
                     tal:define="portal_type brain/portal_type|string:;
+                    self nocall:context/@@faceted-explorer;
                    useViewTypes brain/portal_properties/site_properties/typesUseViewActionInListings|python:[];
                    useView python:portal_type in useViewTypes;"
                     tal:attributes="data-index python:self.get_index(brain);
@@ -77,26 +67,34 @@
               </tal:entries>
               <span tal:condition="not: batch/sequence_length" class="table_faceted_no_results" i18n:domain="plone" i18n:translate="description_no_results_found">No results were found.</span>
             </div>
+            <script type="text/javascript">
+                jQuery(document).ready(function($) {
+                  $(Faceted.Events).bind(Faceted.Events.AJAX_QUERY_SUCCESS, function() {
+                    setTimeout(function() {
+                      var data = $("#faceted-results").attr("data-geojson");
+                      require('pat-registry', 'pat-leaflet').scan($('div#faceted-map'));
+                      if (typeof data != "undefined") {
+                        data = JSON.parse(data);
+                        if (data.features.length > 0) {
+                          $('#faceted-map').trigger('leaflet.refresh', data);
+                        }
+                      }
+                      $('.button-map').click(function() {
+                        $('.button-map').toggle();
+                        $('.pat-leaflet').toggleClass('hidden');
+                      });
+
+                      $('.faceted-map-item').hover(function () {
+                        $('.pat-leaflet').trigger('leaflet.openPopup', $(this).data('index'));
+                      }, function () {
+                        $('.pat-leaflet').trigger('leaflet.closePopup', $(this).data('index'));
+                      });
+                    }, 50);
+                  });
+                });
+            </script>
           </div>
-          <script type="text/javascript">
-            jQuery(document).ready(function ($) {
-              $(Faceted.Events).bind(Faceted.Events.AJAX_QUERY_SUCCESS, function () {
-                var data = $("#faceted-results-items").attr("data-geojson");
-                require('pat-registry', 'pat-leaflet').scan($('div#faceted-map-container'));
-                if (typeof data != "undefined") {
-                  data = JSON.parse(data);
-                  if (data.features.length > 0) {
-                    $('#faceted-map-container').trigger('leaflet.refresh', data);
-                  }
-                }
-              });
-              $('.faceted-map-item').hover(function () {
-                $('#faceted-map-container').trigger('leaflet.openPopup', $(this).data('index'));
-              }, function () {
-                $('#faceted-map-container').trigger('leaflet.closePopup', $(this).data('index'));
-              });
-            });
-          </script>
+
 
           <div metal:use-macro="context/batch_macros/macros/navigation"/>
 
