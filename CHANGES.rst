@@ -5,13 +5,15 @@ Changelog
 1.1.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- [BIBLI-25] : Fix pppw items index in explorer template.
+  [boulch]
 
 
 1.1.4 (2020-08-19)
 ------------------
 
 - [BIBLI-25] : Refactor explorer template to fix a bug when loading map.
+  [boulch]
 
 
 1.1.3 (2020-08-13)

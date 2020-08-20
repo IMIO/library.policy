@@ -30,13 +30,12 @@
               <div id="faceted-map" class="pat-leaflet" style="width: 100%; height:40em;" data-pat-leaflet="${self/map_configuration}" data-geojson=''
               tal:attributes="data-geojson python:map_view.data_geo(batch)"></div>
 
-              <div id="faceted-results" class="no-map">
+              <div id="faceted-results" tal:define="self nocall:context/@@faceted-map;" class="no-map">
               <tal:entries repeat="brain batch">
                 <tal:entry tal:define="obj brain/getObject|nothing" tal:condition="python:obj is not None">
 
                   <div class="faceted-explorer"
                     tal:define="portal_type brain/portal_type|string:;
-                    self nocall:context/@@faceted-explorer;
                    useViewTypes brain/portal_properties/site_properties/typesUseViewActionInListings|python:[];
                    useView python:portal_type in useViewTypes;"
                     tal:attributes="data-index python:self.get_index(brain);
