@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.5 (unreleased)
+1.1.5 (2020-08-20)
 ------------------
 
 - [BIBLI-25] : Fix pppw items index in explorer template.
