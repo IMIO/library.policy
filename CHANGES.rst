@@ -5,8 +5,8 @@ Changelog
 1.1.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- [BIBLI-38] : Load @@images/image/mini instead of @@images/image in explorer faceted view.
+  [boulch]
 
 1.1.5 (2020-08-20)
 ------------------
