@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.6 (unreleased)
+1.1.6 (2020-09-02)
 ------------------
 
 - [BIBLI-38] : Load @@images/image/mini instead of @@images/image in explorer faceted view.
