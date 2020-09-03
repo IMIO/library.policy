@@ -5,7 +5,8 @@ Changelog
 1.1.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- [BIBLI-39] : Add image cropping and banner behaviors on Folder and Document types.
+  [boulch]
 
 
 1.1.6 (2020-09-02)
