@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.7 (unreleased)
+1.1.7 (2020-09-03)
 ------------------
 
 - [BIBLI-39] : Add image cropping and banner behaviors on Folder and Document types.
