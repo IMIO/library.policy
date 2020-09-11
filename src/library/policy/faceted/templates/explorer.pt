@@ -70,13 +70,15 @@
                 jQuery(document).ready(function($) {
                   $(Faceted.Events).bind(Faceted.Events.AJAX_QUERY_SUCCESS, function() {
                     setTimeout(function() {
-                      var data = $("#faceted-results").attr("data-geojson");
+                      var data = $("#faceted-map").attr("data-geojson");
                       require('pat-registry', 'pat-leaflet').scan($('div#faceted-map'));
-                      if (typeof data != "undefined") {
+                      if (typeof data != "undefined" && data) {
                         data = JSON.parse(data);
-                        if (data.features.length > 0) {
+                        if (data.features) {
                           $('#faceted-map').trigger('leaflet.refresh', data);
                         }
+                      } else {
+                        $('#faceted-map').trigger('leaflet.refresh', data);
                       }
 
                       $('.faceted-map-item').hover(function () {

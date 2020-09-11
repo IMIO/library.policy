@@ -5,6 +5,9 @@ Changelog
 1.1.8 (unreleased)
 ------------------
 
+- BIBLI-29: Fix a javascript error when there is no geolocated result to display for faceted map
+  [mpeeters]
+
 - BIBLI-41: Fix show/hide button for faceted map
   [mpeeters]
 
