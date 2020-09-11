@@ -5,7 +5,8 @@ Changelog
 1.1.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- BIBLI-41: Fix show/hide button for faceted map
+  [mpeeters]
 
 
 1.1.7 (2020-09-03)

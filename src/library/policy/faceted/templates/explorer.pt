@@ -78,10 +78,6 @@
                           $('#faceted-map').trigger('leaflet.refresh', data);
                         }
                       }
-                      $('.button-map').click(function() {
-                        $('.button-map').toggle();
-                        $('.pat-leaflet').toggleClass('hidden');
-                      });
 
                       $('.faceted-map-item').hover(function () {
                         $('.pat-leaflet').trigger('leaflet.openPopup', $(this).data('index'));
@@ -89,6 +85,10 @@
                         $('.pat-leaflet').trigger('leaflet.closePopup', $(this).data('index'));
                       });
                     }, 50);
+                  });
+                  $('.button-map').click(function() {
+                    $('.button-map').toggle();
+                    $('.pat-leaflet').toggleClass('hidden');
                   });
                 });
             </script>
