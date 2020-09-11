@@ -5,6 +5,9 @@ Changelog
 1.1.8 (unreleased)
 ------------------
 
+- Use default config coordinates when there is no marker to display on faceted map
+  [mpeeters]
+
 - BIBLI-29: Fix a javascript error when there is no geolocated result to display for faceted map
   [mpeeters]
 

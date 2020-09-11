@@ -37,6 +37,12 @@ class ExplorerView(MapView):
             "default_map_layer": api.portal.get_registry_record(
                 "geolocation.default_map_layer", default=[]
             ),
+            "latitude": api.portal.get_registry_record(
+                "geolocation.default_latitude", default=0.0
+            ),
+            "longitude": api.portal.get_registry_record(
+                "geolocation.default_longitude", default=0.0
+            ),
             "map_layers": [
                 {
                     "title": translate(_(map_layer), context=self.request),
