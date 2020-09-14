@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.8 (unreleased)
+1.1.8 (2020-09-14)
 ------------------
 
 - Use default config coordinates when there is no marker to display on faceted map
