@@ -22,7 +22,7 @@
 
           <div class="eea-preview-items">
 
-              <div class="button-map-content">
+              <div class="button-map-content" i18n:domain="library.policy">
                 <button i18n:translate="hide-map" class="button-map hide-map">Hide map</button>
                 <button i18n:translate="display-map" class="button-map show-map" style="display: none;">Display map</button>
               </div>
