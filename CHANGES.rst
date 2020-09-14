@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.9 (unreleased)
+1.1.9 (2020-09-14)
 ------------------
 
 - BIBLI-41: Add translations for show/hide button on faceted view
