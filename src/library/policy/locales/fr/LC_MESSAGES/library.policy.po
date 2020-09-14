@@ -45,7 +45,7 @@ msgstr ""
 #. Default: "Display map"
 #: ../faceted/templates/explorer.pt:27
 msgid "display-map"
-msgstr ""
+msgstr "Montrer la carte"
 
 #: ../setuphandlers.py:95
 msgid "explorer"
@@ -54,7 +54,7 @@ msgstr ""
 #. Default: "Hide map"
 #: ../faceted/templates/explorer.pt:26
 msgid "hide-map"
-msgstr ""
+msgstr "Cacher la carte"
 
 #: ../configure.zcml:45
 msgid "library.policy"

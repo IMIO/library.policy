@@ -5,7 +5,8 @@ Changelog
 1.1.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- BIBLI-41: Add translations for show/hide button on faceted view
+  [mpeeters]
 
 
 1.1.8 (2020-09-14)
