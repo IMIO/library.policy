@@ -5,7 +5,8 @@ Changelog
 1.1.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- [BIBLI-46] : Set content language same as DefaultLanguage site (upgrade step).
+  [boulch]
 
 
 1.1.9 (2020-09-14)
