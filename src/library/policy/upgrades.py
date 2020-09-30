@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from plone.app.upgrade.utils import loadMigrationProfile
 from plone import api
+from plone.app.upgrade.utils import loadMigrationProfile
 
 
 def reload_gs_profile(context):
@@ -8,6 +8,8 @@ def reload_gs_profile(context):
         context,
         'profile-library.policy:default',
     )
+
+
 # silly : default_language = fr
 # root and folders are fr-be !
 def change_language(context):
