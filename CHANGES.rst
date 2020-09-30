@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.10 (unreleased)
+1.1.10 (2020-09-30)
 -------------------
 
 - [BIBLI-46] : Set content language same as DefaultLanguage site (upgrade step).
