@@ -5,7 +5,8 @@ Changelog
 1.1.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add iaweb.mosaic as a requirement (to add slider in bibliotheca).
+  [boulch]
 
 
 1.1.10 (2020-09-30)

@@ -61,6 +61,7 @@ setup(
         "collective.preventactions",
         "collective.z3cform.select2",
         "collective.cookiecuttr",
+        "iaweb.mosaic",
         "plone.formwidget.recaptcha",
     ],
     extras_require={
