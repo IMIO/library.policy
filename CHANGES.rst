@@ -2,7 +2,13 @@ Changelog
 =========
 
 
-1.1.11 (unreleased)
+1.1.12 (unreleased)
+-------------------
+
+- Nothing changed yet.
+
+
+1.1.11 (2021-02-04)
 -------------------
 
 - Add iaweb.mosaic as a requirement (to add slider in bibliotheca).
