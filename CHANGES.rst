@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.12 (unreleased)
+1.1.12 (2021-02-05)
 -------------------
 
 - Correct issue when upload 1.1.11 on pypi.
