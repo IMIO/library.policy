@@ -5,7 +5,8 @@ Changelog
 1.1.12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Correct issue when upload 1.1.11 on pypi.
+  [boulch]
 
 
 1.1.11 (2021-02-04)
