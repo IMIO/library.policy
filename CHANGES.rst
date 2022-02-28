@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.13 (unreleased)
+1.1.13 (2022-02-28)
 -------------------
 
 - Add collective.big.bang dependency
