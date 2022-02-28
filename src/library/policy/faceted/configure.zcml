@@ -12,6 +12,7 @@
     title="Explorer"
     permission="zope2.View"
     class=".explorer.ExplorerView"
+    layer="library.policy.interfaces.ILibraryPolicyLayer"
     />
 
 </configure>

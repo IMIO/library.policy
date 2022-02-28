@@ -53,3 +53,7 @@ class ExplorerView(MapView):
             "useCluster": False,
         }
         return json.dumps(config)
+
+    def css_class(self, brain):
+        klass = super(ExplorerView, self).css_class(brain)
+        return klass
