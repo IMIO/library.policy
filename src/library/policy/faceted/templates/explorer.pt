@@ -15,7 +15,7 @@
         Batch python:modules['Products.CMFPlone'].Batch;
         b_start python:request.get('b_start', 0);
         batch python:isinstance(folderContents, Batch) and folderContents or Batch(folderContents, 100, int(b_start), orphan=2);
-        self nocall:context/@@faceted-explorer;
+        explorer_view nocall:context/@@faceted-explorer;
         map_view context/@@faceted-map-geojson;">
 
           <div metal:use-macro="context/batch_macros/macros/navigation"/>
@@ -27,10 +27,10 @@
                 <button i18n:translate="display-map" class="button-map show-map" style="display: none;">Display map</button>
               </div>
 
-              <div id="faceted-map" class="pat-leaflet" style="width: 100%; height:40em;" data-pat-leaflet="${self/map_configuration}" data-geojson=''
+              <div id="faceted-map-datas" class="pat-leaflet" style="width: 100%; height:40em;" data-pat-leaflet="${explorer_view/map_configuration}" data-geojson=''
               tal:attributes="data-geojson python:map_view.data_geo(batch)"></div>
 
-              <div id="faceted-results" tal:define="self nocall:context/@@faceted-map;" class="no-map">
+              <div id="faceted-results" class="no-map">
               <tal:entries repeat="brain batch">
                 <tal:entry tal:define="obj brain/getObject|nothing" tal:condition="python:obj is not None">
 
@@ -38,8 +38,8 @@
                     tal:define="portal_type brain/portal_type|string:;
                    useViewTypes brain/portal_properties/site_properties/typesUseViewActionInListings|python:[];
                    useView python:portal_type in useViewTypes;"
-                    tal:attributes="data-index python:self.get_index(brain);
-                                 class python:self.css_class(brain)">
+                    tal:attributes="data-index python:explorer_view.get_index(brain);
+                                 class python:explorer_view.css_class(brain);">
                     <a
                       tal:define="description brain/Description|string:;
                              title brain/pretty_title_or_id|string:;
@@ -70,15 +70,15 @@
                 jQuery(document).ready(function($) {
                   $(Faceted.Events).bind(Faceted.Events.AJAX_QUERY_SUCCESS, function() {
                     setTimeout(function() {
-                      var data = $("#faceted-map").attr("data-geojson");
-                      require('pat-registry', 'pat-leaflet').scan($('div#faceted-map'));
+                      var data = $("#faceted-map-datas").attr("data-geojson");
+                      require('pat-registry', 'pat-leaflet').scan($('div#faceted-map-datas'));
                       if (typeof data != "undefined" && data) {
                         data = JSON.parse(data);
                         if (data.features) {
-                          $('#faceted-map').trigger('leaflet.refresh', data);
+                          $('#faceted-map-datas').trigger('leaflet.refresh', data);
                         }
                       } else {
-                        $('#faceted-map').trigger('leaflet.refresh', data);
+                        $('#faceted-map-datas').trigger('leaflet.refresh', data);
                       }
 
                       $('.faceted-map-item').hover(function () {
