@@ -15,4 +15,12 @@
     layer="library.policy.interfaces.ILibraryPolicyLayer"
     />
 
+  <browser:page
+    name="faceted-map-geojson"
+    for="*"
+    class=".view.FacetedGeoJSON"
+    permission="zope2.View"
+    layer="library.policy.interfaces.ILibraryPolicyLayer"
+  />
+
 </configure>

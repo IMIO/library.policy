@@ -5,7 +5,8 @@ Changelog
 1.1.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Generate colors on pinpoint location depending on collective.taxonomy.dossiers item title
+  [boulch]
 
 
 1.1.12 (2021-02-05)
