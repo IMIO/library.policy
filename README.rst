@@ -2,6 +2,14 @@
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
    This text does not appear on pypi or github. It is a comment.
 
+.. image:: https://github.com/IMIO/library.policy/workflows/Tests/badge.svg
+    :target: https://github.com/IMIO/library.policy/actions?query=workflow%3ATests
+    :alt: CI Status
+
+.. image:: https://coveralls.io/repos/github/IMIO/library.policy/badge.svg?branch=master
+    :target: https://coveralls.io/github/IMIO/library.policy?branch=master
+    :alt: Coveralls
+
 ==============
 library.policy
 ==============
