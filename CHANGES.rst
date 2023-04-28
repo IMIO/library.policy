@@ -5,7 +5,8 @@ Changelog
 1.1.14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Migration to Plone6
+  [boulch]
 
 
 1.1.13 (2022-02-28)
