@@ -5,7 +5,8 @@ Changelog
 1.1.18 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Migration to Plone6
+  [boulch]
 
 
 1.1.17 (2024-02-16)

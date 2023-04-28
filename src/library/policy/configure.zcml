@@ -15,7 +15,6 @@
   <include package="plone.app.contentmenu" />
 
   <include package="eea.facetednavigation" />
-  <include package="eea.jquery" />
   <include package="collective.big.bang" />
   <include package="collective.faceted.map" />
   <include package="collective.geolocationbehavior" />
@@ -29,14 +28,14 @@
   <include package="collective.behavior.gallery" />
   <include package="collective.easyform" />
   <include package="collective.preventactions" />
-  <include package="collective.plausible" />
   <include package="plone.formwidget.recaptcha" />
 
   <include package=".browser" />
   <include package=".faceted" />
-  <include package=".upgrades" />
 
   <include file="permissions.zcml" />
+
+  <include file="upgrades.zcml" />
 
   <genericsetup:registerProfile
       name="default"
