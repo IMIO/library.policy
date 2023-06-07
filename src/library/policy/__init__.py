@@ -3,4 +3,4 @@
 from zope.i18nmessageid import MessageFactory
 
 
-_ = MessageFactory('library.policy')
+_ = MessageFactory("library.policy")

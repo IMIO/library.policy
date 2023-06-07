@@ -11,7 +11,6 @@ import library.policy
 
 
 class LibraryPolicyLayer(PloneSandboxLayer):
-
     defaultBases = (PLONE_APP_CONTENTTYPES_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
@@ -21,7 +20,7 @@ class LibraryPolicyLayer(PloneSandboxLayer):
         self.loadZCML(package=library.policy)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'library.policy:default')
+        applyProfile(portal, "library.policy:default")
 
 
 LIBRARY_POLICY_FIXTURE = LibraryPolicyLayer()
@@ -29,13 +28,13 @@ LIBRARY_POLICY_FIXTURE = LibraryPolicyLayer()
 
 LIBRARY_POLICY_INTEGRATION_TESTING = IntegrationTesting(
     bases=(LIBRARY_POLICY_FIXTURE,),
-    name='LibraryPolicyLayer:IntegrationTesting',
+    name="LibraryPolicyLayer:IntegrationTesting",
 )
 
 
 LIBRARY_POLICY_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(LIBRARY_POLICY_FIXTURE,),
-    name='LibraryPolicyLayer:FunctionalTesting',
+    name="LibraryPolicyLayer:FunctionalTesting",
 )
 
 
@@ -45,5 +44,5 @@ LIBRARY_POLICY_ACCEPTANCE_TESTING = FunctionalTesting(
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),
-    name='LibraryPolicyLayer:AcceptanceTesting',
+    name="LibraryPolicyLayer:AcceptanceTesting",
 )

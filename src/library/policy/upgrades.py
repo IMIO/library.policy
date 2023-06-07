@@ -6,14 +6,14 @@ from plone.app.upgrade.utils import loadMigrationProfile
 def reload_gs_profile(context):
     loadMigrationProfile(
         context,
-        'profile-library.policy:default',
+        "profile-library.policy:default",
     )
 
 
 # silly : default_language = fr
 # root and folders are fr-be !
 def change_language(context):
-    pl = api.portal.get_tool('portal_languages')
+    pl = api.portal.get_tool("portal_languages")
     default_language = pl.getDefaultLanguage()
     root = api.portal.get()
     brains = api.content.find(root)
