@@ -6,6 +6,7 @@ Changelog
 -------------------
 
 - Migration to Plone6
+- Create upgrade step to reimport faceted "explorer" config (Fix select2 widgets)
   [boulch]
 
 

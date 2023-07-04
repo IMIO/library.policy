@@ -21,4 +21,13 @@
     profile="library.policy:default"
     handler=".upgrades.change_language"
   />
+
+  <genericsetup:upgradeStep
+    source="1002"
+    destination="1003"
+    title="reimport faceted"
+    description="Reimport faceted explorer configuration"
+    profile="library.policy:default"
+    handler=".upgrades.configure_faceted"
+  />
 </configure>
