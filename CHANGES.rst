@@ -5,7 +5,8 @@ Changelog
 1.1.14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Create upgrade step to reimport faceted "explorer" config (Fix select2 widgets)
+  [boulch]
 
 
 1.1.13 (2022-02-28)
