@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.14 (unreleased)
+1.1.14 (2023-07-05)
 -------------------
 
 - Create upgrade step to reimport faceted "explorer" config (Fix select2 widgets)
