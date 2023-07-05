@@ -49,6 +49,7 @@ setup(
         "setuptools",
         "z3c.jbot",
         "eea.facetednavigation",
+        "eea.jquery",
         "collective.big.bang",
         "collective.faceted.map",
         "collective.faceted.taxonomywidget",
