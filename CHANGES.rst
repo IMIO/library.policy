@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.14 (unreleased)
+1.1.14 (2023-07-05)
 -------------------
 
 - Migration to Plone6
