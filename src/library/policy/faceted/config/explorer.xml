@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object name="explorer" meta_type="Dexterity Container">
  <criteria>
+  <criterion name="c8">
+   <property name="widget">text</property>
+   <property name="title">Chercher</property>
+   <property name="index">SearchableText</property>
+   <property name="onlyallelements">True</property>
+   <property name="wildcard">True</property>
+   <property name="position">center</property>
+   <property name="section">default</property>
+   <property name="hidden">False</property>
+  </criterion>
   <criterion name="c4">
    <property name="widget">select2</property>
    <property name="title">Dossiers</property>
@@ -52,16 +62,6 @@
    <property name="sortcountable">False</property>
    <property name="hidezerocount">True</property>
    <property name="sortreversed">False</property>
-  </criterion>
-  <criterion name="c8">
-   <property name="widget">text</property>
-   <property name="title">Chercher</property>
-   <property name="index">SearchableText</property>
-   <property name="onlyallelements">True</property>
-   <property name="wildcard">True</property>
-   <property name="position">center</property>
-   <property name="section">default</property>
-   <property name="hidden">False</property>
   </criterion>
   <criterion name="c3">
    <property name="widget">criteria</property>
