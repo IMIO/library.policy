@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.15 (unreleased)
+1.1.15 (2023-08-09)
 -------------------
 
 - MBIBLIWLHA-6 : Change value of Plone.thumb_scale_listing to display bigger picture in library folders views
