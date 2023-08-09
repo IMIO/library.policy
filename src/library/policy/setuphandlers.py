@@ -19,6 +19,11 @@ class HiddenProfiles(object):
             "library.policy:uninstall",
         ]
 
+    def getNonInstallableProducts(self):
+        """Hide unwanted products from site-creation and quickinstaller."""
+        return [
+            "library.policy.upgrades",
+        ]
 
 def post_install(context):
     """Post install script"""

@@ -33,10 +33,9 @@
 
   <include package=".browser" />
   <include package=".faceted" />
+  <include package=".upgrades" />
 
   <include file="permissions.zcml" />
-
-  <include file="upgrades.zcml" />
 
   <genericsetup:registerProfile
       name="default"

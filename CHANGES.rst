@@ -5,7 +5,8 @@ Changelog
 1.1.15 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- MBIBLIWLHA-6 : Change value of Plone.thumb_scale_listing to display bigger picture in library folders views
+  [boulch]
 
 
 1.1.14 (2023-07-05)
