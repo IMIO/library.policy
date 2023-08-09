@@ -11,7 +11,13 @@
     profile="library.policy:default"
     handler=".upgrades.reload_gs_profile"
     />-->
-
+  <genericsetup:registerProfile
+    name="upgrade_1003_to_1004"
+    title="Upgrade from 1003 to 1004"
+    directory="profiles/1003_to_1004"
+    description="Change value of Plone.thumb_scale_listing to display bigger picture in library folders views"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+  />
 
   <genericsetup:upgradeStep
     source="*"
@@ -30,4 +36,15 @@
     profile="library.policy:default"
     handler=".upgrades.configure_faceted"
   />
+
+  <genericsetup:upgradeSteps
+    source="1003"
+    destination="1004"
+    profile="library.policy:default">
+    <genericsetup:upgradeDepends
+      title="Change value of Plone.thumb_scale_listing to display bigger picture in library folders views"
+      import_profile="library.policy.upgrades:upgrade_1003_to_1004"
+    />
+  </genericsetup:upgradeSteps>
+
 </configure>
