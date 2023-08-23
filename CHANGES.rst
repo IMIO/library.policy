@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.16 (unreleased)
+1.1.16 (2023-08-23)
 -------------------
 
 - clear configure_faceted (in upgrades.py). Manually done on each instance due to missing taxonomies
