@@ -5,7 +5,8 @@ Changelog
 1.1.16 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- clear configure_faceted (in upgrades.py). Manually done on each instance due to missing taxonomies
+  [boulch]
 
 
 1.1.15 (2023-08-09)
