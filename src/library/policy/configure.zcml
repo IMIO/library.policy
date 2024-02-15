@@ -28,6 +28,7 @@
   <include package="collective.easyform" />
   <include package="collective.preventactions" />
   <include package="collective.z3cform.select2" />
+  <include package="imio.plausible" />
   <include package="plone.formwidget.recaptcha" />
 
   <include package=".browser" />

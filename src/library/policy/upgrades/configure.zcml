@@ -47,4 +47,18 @@
     />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      source="1004"
+      destination="1005"
+      profile="library.policy:default">
+    <genericsetup:upgradeDepends
+        title="Install imio.plausible add-on"
+        import_profile="imio.plausible:default"
+        />
+    <genericsetup:upgradeStep
+        title="Install and configure imio.plausible add-on"
+        handler=".upgrades.upgrade_1004_to_1005"
+        />
+  </genericsetup:upgradeSteps>
+
 </configure>

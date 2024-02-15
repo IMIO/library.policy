@@ -2,6 +2,7 @@
 
 from plone import api
 from plone.app.upgrade.utils import loadMigrationProfile
+from Products.CMFCore.utils import getToolByName
 
 
 def reload_gs_profile(context):
@@ -27,3 +28,7 @@ def change_language(context):
 
 def configure_faceted(context):
     pass
+
+def upgrade_1004_to_1005(context):
+    setup_tool = getToolByName(context, 'portal_setup')
+    setup_tool.runAllImportStepsFromProfile('profile-imio.plausible:default')
