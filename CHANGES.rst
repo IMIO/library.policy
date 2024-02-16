@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.17 (unreleased)
+1.1.17 (2024-02-16)
 -------------------
 
 - WEB-4074 : Install collective.plausible
