@@ -29,6 +29,7 @@ def change_language(context):
 def configure_faceted(context):
     pass
 
+
 def upgrade_1004_to_1005(context):
-    setup_tool = getToolByName(context, 'portal_setup')
-    setup_tool.runAllImportStepsFromProfile('profile-collective.plausible:default')
+    setup_tool = getToolByName(context, "portal_setup")
+    setup_tool.runAllImportStepsFromProfile("profile-collective.plausible:default")
