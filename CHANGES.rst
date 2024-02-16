@@ -5,7 +5,8 @@ Changelog
 1.1.17 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- WEB-4074 : Install collective.plausible
+  [remdub]
 
 
 1.1.16 (2023-08-23)
