@@ -12,6 +12,8 @@
     Better import explicite packages or configurations ;)
   -->
   <!--<includeDependencies package="." />-->
+  <include package="plone.app.contentmenu" />
+
   <include package="eea.facetednavigation" />
   <include package="collective.big.bang" />
   <include package="collective.faceted.map" />
