@@ -64,6 +64,7 @@ setup(
         "collective.preventactions",
         "collective.cookiecuttr",
         "iaweb.mosaic",
+        "collective.plausible",
         "plone.formwidget.recaptcha",
     ],
     extras_require={
