@@ -52,11 +52,11 @@
       destination="1005"
       profile="library.policy:default">
     <genericsetup:upgradeDepends
-        title="Install imio.plausible add-on"
-        import_profile="imio.plausible:default"
+        title="Install collective.plausible add-on"
+        import_profile="collective.plausible:default"
         />
     <genericsetup:upgradeStep
-        title="Install and configure imio.plausible add-on"
+        title="Install and configure collective.plausible add-on"
         handler=".upgrades.upgrade_1004_to_1005"
         />
   </genericsetup:upgradeSteps>

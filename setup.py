@@ -64,7 +64,7 @@ setup(
         "collective.z3cform.select2",
         "collective.cookiecuttr",
         "iaweb.mosaic",
-        "imio.plausible",
+        "collective.plausible",
         "plone.formwidget.recaptcha",
     ],
     extras_require={

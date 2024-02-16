@@ -31,4 +31,4 @@ def configure_faceted(context):
 
 def upgrade_1004_to_1005(context):
     setup_tool = getToolByName(context, 'portal_setup')
-    setup_tool.runAllImportStepsFromProfile('profile-imio.plausible:default')
+    setup_tool.runAllImportStepsFromProfile('profile-collective.plausible:default')
