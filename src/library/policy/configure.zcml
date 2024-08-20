@@ -18,8 +18,9 @@
   <include package="collective.big.bang" />
   <include package="collective.faceted.map" />
   <include package="collective.geolocationbehavior" />
-  <include package="collective.faceted.taxonomywidget" />
+  <include package="collective.js.jqueryui" />
   <include package="collective.taxonomy" />
+  <include package="collective.faceted.taxonomywidget" />
   <include package="plone.app.imagecropping" />
   <include package="plone.app.mosaic" />
   <include package="library.core" />
@@ -28,14 +29,15 @@
   <include package="collective.behavior.gallery" />
   <include package="collective.easyform" />
   <include package="collective.preventactions" />
+  <include package="collective.plausible" />
+  <include package="collective.z3cform.select2" file="minimal.zcml" />
   <include package="plone.formwidget.recaptcha" />
 
   <include package=".browser" />
   <include package=".faceted" />
+  <include package=".upgrades" />
 
   <include file="permissions.zcml" />
-
-  <include file="upgrades.zcml" />
 
   <genericsetup:registerProfile
       name="default"

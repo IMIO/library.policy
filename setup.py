@@ -53,6 +53,7 @@ setup(
         "collective.big.bang",
         "collective.faceted.map",
         "collective.faceted.taxonomywidget",
+        "collective.js.jqueryui",
         "collective.taxonomy",
         "plone.app.imagecropping",
         "plone.app.mosaic",

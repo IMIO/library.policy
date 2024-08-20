@@ -5,6 +5,9 @@ Changelog
 1.1.18 (unreleased)
 -------------------
 
+- Migrate to Plone 6. Next steps!
+  [boulch]
+
 - Migration to Plone6
   [boulch]
 
