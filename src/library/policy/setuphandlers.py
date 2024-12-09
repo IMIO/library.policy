@@ -99,9 +99,10 @@ def add_stucture(portal):
     # Folder professionals
     if "explorer" not in portal:
         obj = create_content("Folder", _("explorer"), portal)
-        _activate_dashboard_navigation(obj, True, "/faceted/config/explorer.xml")
-        explorer_layout = FacetedLayout(obj)
-        explorer_layout.update_layout(layout="faceted-explorer")
+        subtyper = obj.restrictedTraverse("@@faceted_subtyper")
+        subtyper.enable()        
+        layout = FacetedLayout(obj)
+        layout.update_layout(layout="faceted-map")
         _publish(obj)
 
 

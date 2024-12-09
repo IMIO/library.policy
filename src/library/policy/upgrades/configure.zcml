@@ -148,4 +148,13 @@
     handler=".upgrades.update_faceted_folders"
   />
 
+  <genericsetup:upgradeStep
+    source="1009"
+    destination="1010"
+    title="Change faceted layout"
+    description="Change faceted layout"
+    profile="library.policy:default"
+    handler=".upgrades.update_faceted_layout"
+  />
+
 </configure>

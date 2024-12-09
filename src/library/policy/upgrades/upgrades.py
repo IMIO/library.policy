@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from eea.facetednavigation.interfaces import ICriteria
+from eea.facetednavigation.layout.layout import FacetedLayout
 from eea.facetednavigation.subtypes.interfaces import IFacetedNavigable
 from library.policy.utils import configure_faceted
 from plone import api
@@ -59,3 +60,10 @@ def update_faceted_folders(context):
                 criterion.update(widget="multiselect", placeholder=criterion.title)
         criteria_handler._update(criteria)
 
+
+def update_faceted_layout(context):
+    brains = api.content.find(object_provides=IFacetedNavigable)
+    for brain in brains:
+        obj = brain.getObject()
+        layout = FacetedLayout(obj)
+        layout.update_layout(layout="faceted-map")
