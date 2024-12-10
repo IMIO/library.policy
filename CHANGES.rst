@@ -44,6 +44,34 @@ Changelog
   [boulch]
 
 
+1.1.17 (2024-02-16)
+-------------------
+
+- WEB-4074 : Install collective.plausible
+  [remdub]
+
+
+1.1.16 (2023-08-23)
+-------------------
+
+- clear configure_faceted (in upgrades.py). Manually done on each instance due to missing taxonomies
+  [boulch]
+
+
+1.1.15 (2023-08-09)
+-------------------
+
+- MBIBLIWLHA-6 : Change value of Plone.thumb_scale_listing to display bigger picture in library folders views
+  [boulch]
+
+
+1.1.14 (2023-07-05)
+-------------------
+
+- Create upgrade step to reimport faceted "explorer" config (Fix select2 widgets)
+  [boulch]
+
+
 1.1.13 (2022-02-28)
 -------------------
 
