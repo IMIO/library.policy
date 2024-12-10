@@ -45,6 +45,14 @@
     provides="Products.GenericSetup.interfaces.EXTENSION"
   />
 
+  <genericsetup:registerProfile
+    name="upgrade_1010_to_1011"
+    title="Upgrade from 1010 to 1011"
+    directory="profiles/1010_to_1011"
+    description="Remove deprecated bundles"
+    provides="Products.GenericSetup.interfaces.EXTENSION"
+  />  
+
   <genericsetup:upgradeStep
     source="*"
     destination="1002"
@@ -156,5 +164,15 @@
     profile="library.policy:default"
     handler=".upgrades.update_faceted_layout"
   />
+
+  <genericsetup:upgradeSteps
+    source="1010"
+    destination="1011"
+    profile="library.policy:default">
+    <genericsetup:upgradeDepends
+      title="Remove deprecated bundles"
+      import_profile="library.policy.upgrades:upgrade_1010_to_1011"
+      />
+  </genericsetup:upgradeSteps>
 
 </configure>
