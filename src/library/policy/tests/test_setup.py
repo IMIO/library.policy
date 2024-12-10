@@ -21,7 +21,7 @@ class TestSetup(unittest.TestCase):
 
     def test_product_installed(self):
         """Test if library.policy is installed."""
-        self.assertTrue(self.installer.isProductInstalled("library.policy"))
+        self.assertTrue(self.installer.is_product_installed("library.policy"))
 
     def test_browserlayer(self):
         """Test that ILibraryPolicyLayer is registered."""
@@ -39,12 +39,12 @@ class TestUninstall(unittest.TestCase):
         self.installer = get_installer(self.portal, self.layer["request"])
         roles_before = api.user.get_roles(TEST_USER_ID)
         setRoles(self.portal, TEST_USER_ID, ["Manager"])
-        self.installer.uninstallProducts(["library.policy"])
+        self.installer.uninstall_product("library.policy")
         setRoles(self.portal, TEST_USER_ID, roles_before)
 
     def test_product_uninstalled(self):
         """Test if library.policy is cleanly uninstalled."""
-        self.assertFalse(self.installer.isProductInstalled("library.policy"))
+        self.assertFalse(self.installer.is_product_installed("library.policy"))
 
     def test_browserlayer_removed(self):
         """Test that ILibraryPolicyLayer is removed."""

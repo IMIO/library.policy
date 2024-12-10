@@ -12,13 +12,16 @@
     Better import explicite packages or configurations ;)
   -->
   <!--<includeDependencies package="." />-->
+  <include package="plone.app.contentmenu" />
+
   <include package="eea.facetednavigation" />
   <include package="eea.jquery" />
   <include package="collective.big.bang" />
   <include package="collective.faceted.map" />
   <include package="collective.geolocationbehavior" />
-  <include package="collective.faceted.taxonomywidget" />
+  <include package="collective.js.jqueryui" />
   <include package="collective.taxonomy" />
+  <include package="collective.faceted.taxonomywidget" />
   <include package="plone.app.imagecropping" />
   <include package="plone.app.mosaic" />
   <include package="library.core" />
@@ -27,8 +30,8 @@
   <include package="collective.behavior.gallery" />
   <include package="collective.easyform" />
   <include package="collective.preventactions" />
-  <include package="collective.z3cform.select2" />
   <include package="collective.plausible" />
+  <include package="collective.z3cform.select2" file="minimal.zcml" />
   <include package="plone.formwidget.recaptcha" />
 
   <include package=".browser" />

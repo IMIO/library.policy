@@ -5,8 +5,42 @@ Changelog
 1.1.18 (unreleased)
 -------------------
 
-- BIBLI-73 : Update to Plone6 (6.0.9)
+- BIBLI-73 : Change default faceted view for "explorer" folders
   [boulch]
+
+- Migrate to Plone 6. Next steps!
+  [boulch]
+
+- Migration to Plone6
+  [boulch]
+
+
+1.1.17 (2024-02-16)
+-------------------
+
+- WEB-4074 : Install collective.plausible
+  [remdub]
+
+
+1.1.16 (2023-08-23)
+-------------------
+
+- clear configure_faceted (in upgrades.py). Manually done on each instance due to missing taxonomies
+  [boulch]
+
+
+1.1.15 (2023-08-09)
+-------------------
+
+- MBIBLIWLHA-6 : Change value of Plone.thumb_scale_listing to display bigger picture in library folders views
+  [boulch]
+
+
+1.1.14 (2023-07-05)
+-------------------
+
+- Migration to Plone6
+- Create upgrade step to reimport faceted "explorer" config (Fix select2 widgets)
 
 
 1.1.17 (2024-02-16)
