@@ -25,7 +25,6 @@
   <include package="plone.app.imagecropping" />
   <include package="plone.app.mosaic" />
   <include package="library.core" />
-  <include package="library.theme" />
   <include package="collective.behavior.banner" />
   <include package="collective.behavior.gallery" />
   <include package="collective.easyform" />
