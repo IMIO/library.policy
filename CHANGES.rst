@@ -5,6 +5,9 @@ Changelog
 1.1.18 (unreleased)
 -------------------
 
+- BIBLI-73 : Update to Plone6 (6.0.9)
+  [boulch]
+
 - BIBLI-73 : Change default faceted view for "explorer" folders
   [boulch]
 
