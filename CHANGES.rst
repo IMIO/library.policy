@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0.1 (unreleased)
+2.0.1 (2024-12-12)
 ------------------
 
 - BIBLI-73 : Let deprecated old library.theme. Need to be uninstall manually TTW.
