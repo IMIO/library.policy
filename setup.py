@@ -58,6 +58,7 @@ setup(
         "plone.app.imagecropping",
         "plone.app.mosaic",
         "library.core",
+        "library.theme",
         "collective.behavior.banner",
         "collective.behavior.gallery",
         "collective.easyform",

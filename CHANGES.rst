@@ -5,7 +5,8 @@ Changelog
 2.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- BIBLI-73 : Let deprecated old library.theme. Need to be uninstall manually TTW.
+  [boulch]
 
 
 2.0.0 (2024-12-11)
