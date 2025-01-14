@@ -5,8 +5,8 @@ Changelog
 2.0.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Reinstall collective.behavior.gallery 
+  [boulch]
 
 2.0.1 (2024-12-12)
 ------------------

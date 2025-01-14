@@ -51,7 +51,7 @@
     directory="profiles/1010_to_1011"
     description="Remove deprecated bundles"
     provides="Products.GenericSetup.interfaces.EXTENSION"
-  />  
+    />
 
   <genericsetup:upgradeStep
     source="*"
@@ -173,6 +173,16 @@
       title="Remove deprecated bundles"
       import_profile="library.policy.upgrades:upgrade_1010_to_1011"
       />
+  </genericsetup:upgradeSteps>
+
+  <genericsetup:upgradeSteps
+    source="1011"
+    destination="1012"
+    profile="library.policy:default">
+    <genericsetup:upgradeDepends
+      title="Reinstall collective.behavior.gallery"
+      import_profile="collective.behavior.gallery:default"
+    />
   </genericsetup:upgradeSteps>
 
 </configure>
