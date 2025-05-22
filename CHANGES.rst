@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0.3 (unreleased)
+2.0.3 (2025-05-22)
 ------------------
 
 - BIBLIBDC-125 : Set "banner" (instead of "preview") as default scale for collective.behavior.banner "banner_scale"
