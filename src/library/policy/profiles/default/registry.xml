@@ -12,4 +12,10 @@
   <record name="plone.thumb_scale_listing" interface="Products.CMFPlone.interfaces.controlpanel.ISiteSchema" field="thumb_scale_listing">
       <value>preview</value>
   </record>
+  <record name="plone.allowed_sizes" interface="plone.base.interfaces.controlpanel.IImagingSchema" field="allowed_sizes">
+      <value purge="false"><element>banner 1920:400</element></value>
+  </record>
+  <records interface="collective.behavior.banner.browser.controlpanel.IBannerSettingsSchema" prefix="collective.behavior.banner.browser.controlpanel.IBannerSettingsSchema">
+      <value key="banner_scale">banner</value>
+  </records>
 </registry>

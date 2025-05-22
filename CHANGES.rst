@@ -5,7 +5,8 @@ Changelog
 2.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- BIBLIBDC-125 : Set "banner" (instead of "preview") as default scale for collective.behavior.banner "banner_scale"
+  [boulch]
 
 
 2.0.2 (2025-01-14)

@@ -185,4 +185,13 @@
     />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeStep
+    source="1012"
+    destination="1013"
+    title="Set banner_scale to banner"
+    description="Set banner_scale to banner"
+    profile="library.policy:default"
+    handler=".upgrades.set_banner_scale"
+  />
+
 </configure>
