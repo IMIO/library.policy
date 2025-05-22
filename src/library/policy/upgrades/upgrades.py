@@ -71,4 +71,7 @@ def update_faceted_layout(context):
 
 def set_banner_scale(context=None):
     # Set the default scale for the banner
-    api.portal.set_registry_record("collective.behavior.banner.browser.controlpanel.IBannerSettingsSchema.banner_scale", "banner")
+    api.portal.set_registry_record(
+        "collective.behavior.banner.browser.controlpanel.IBannerSettingsSchema.banner_scale",
+        "banner",
+    )

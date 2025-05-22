@@ -100,7 +100,7 @@ def add_stucture(portal):
     if "explorer" not in portal:
         obj = create_content("Folder", _("explorer"), portal)
         subtyper = obj.restrictedTraverse("@@faceted_subtyper")
-        subtyper.enable()        
+        subtyper.enable()
         layout = FacetedLayout(obj)
         layout.update_layout(layout="faceted-map")
         _publish(obj)
