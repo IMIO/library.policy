@@ -80,3 +80,8 @@ def set_banner_scale(context=None):
 def uninstall_plone_patternslib(context):
     installer = get_installer(context)
     installer.uninstall_product("plone.patternslib")
+
+
+def uninstall_library_theme(context):
+    installer = get_installer(context)
+    installer.uninstall_product("library.theme")

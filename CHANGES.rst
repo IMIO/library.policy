@@ -5,8 +5,12 @@ Changelog
 2.0.4 (unreleased)
 ------------------
 
+- Uninstall obsolete `library.theme` (it will later be removed)
+  [boulch, laulaz]
+
 - Ensure unused `plone.patternslib` is not installed as it causes errors
   [boulch, laulaz]
+
 
 2.0.3 (2025-05-22)
 ------------------

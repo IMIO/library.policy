@@ -202,4 +202,12 @@
     handler=".upgrades.uninstall_plone_patternslib"
     />
 
+  <genericsetup:upgradeStep
+    source="1014"
+    destination="1015"
+    title="Uninstall obsolete library.theme"
+    profile="library.policy:default"
+    handler=".upgrades.uninstall_library_theme"
+    />
+
 </configure>
