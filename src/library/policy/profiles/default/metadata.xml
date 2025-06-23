@@ -15,8 +15,8 @@
     <dependency>profile-collective.taxonomy:default</dependency>
     <dependency>profile-plone.app.imagecropping:default</dependency>
     <dependency>profile-plone.app.mosaic:default</dependency>
+    <dependency>profile-plone.app.theming:default</dependency>
     <dependency>profile-plone.formwidget.recaptcha:default</dependency>
     <dependency>profile-library.core:default</dependency>
-    <dependency>profile-library.theme:default</dependency>
   </dependencies>
 </metadata>
