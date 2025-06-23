@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0.4 (unreleased)
+2.0.4 (2025-06-23)
 ------------------
 
 - Uninstall obsolete `library.theme` (it will later be removed)
