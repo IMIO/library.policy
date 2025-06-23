@@ -18,4 +18,13 @@
       directory="static"
       />
 
+  <!-- Moved viewlet registration -->
+  <browser:viewlet
+      name="plone.site_actions"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      class="plone.app.layout.viewlets.common.SiteActionsViewlet"
+      permission="zope2.View"
+      layer="library.policy.interfaces.ILibraryPolicyLayer"
+      />
+
 </configure>

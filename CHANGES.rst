@@ -5,7 +5,8 @@ Changelog
 2.0.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Move viewlets registrations from obsolete `library.theme` to `library.policy`
+  [laulaz]
 
 
 2.0.4 (2025-06-23)
