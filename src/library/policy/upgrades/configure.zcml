@@ -194,4 +194,12 @@
     handler=".upgrades.set_banner_scale"
   />
 
+  <genericsetup:upgradeStep
+    source="1013"
+    destination="1014"
+    title="Uninstall unused plone.patternslib"
+    profile="library.policy:default"
+    handler=".upgrades.uninstall_plone_patternslib"
+    />
+
 </configure>

@@ -5,8 +5,8 @@ Changelog
 2.0.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Ensure unused `plone.patternslib` is not installed as it causes errors
+  [boulch, laulaz]
 
 2.0.3 (2025-05-22)
 ------------------

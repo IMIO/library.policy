@@ -75,3 +75,8 @@ def set_banner_scale(context=None):
         "collective.behavior.banner.browser.controlpanel.IBannerSettingsSchema.banner_scale",
         "banner",
     )
+
+
+def uninstall_plone_patternslib(context):
+    installer = get_installer(context)
+    installer.uninstall_product("plone.patternslib")
