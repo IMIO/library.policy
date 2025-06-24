@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0.5 (unreleased)
+2.0.5 (2025-06-24)
 ------------------
 
 - Remove obsolete `library.theme` completely
