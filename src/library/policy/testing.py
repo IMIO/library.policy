@@ -6,6 +6,7 @@ from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import PloneSandboxLayer
 from plone.testing import z2
+from zope.globalrequest import setRequest
 
 import library.policy
 
@@ -20,6 +21,9 @@ class LibraryPolicyLayer(PloneSandboxLayer):
         self.loadZCML(package=library.policy)
 
     def setUpPloneSite(self, portal):
+        request = portal.REQUEST
+        setRequest(request)
+        request["LANGUAGE"] = "en"
         applyProfile(portal, "library.policy:default")
 
 

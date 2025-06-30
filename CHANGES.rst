@@ -5,7 +5,8 @@ Changelog
 2.0.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- BIBLI-81 : Improve installation (Faceted, Taxonomies)
+  [boulch]
 
 
 2.0.5 (2025-06-24)

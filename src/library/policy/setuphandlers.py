@@ -1,11 +1,10 @@
 # -*- coding: utf-8 -*-
-from collective.taxonomy.factory import registerTaxonomy
-from collective.taxonomy.interfaces import ITaxonomy
 from eea.facetednavigation.layout.layout import FacetedLayout
 from library.policy import _
 from plone import api
+from plone.app.viewletmanager.interfaces import IViewletSettingsStorage
 from Products.CMFPlone.interfaces import INonInstallable
-from zope.i18n import translate
+from zope.component import getUtility
 from zope.interface import implementer
 
 import os
@@ -30,8 +29,8 @@ def post_install(context):
     """Post install script"""
     # Do something at the end of the installation of this package.
     portal = api.portal.get()
-    add_taxonomies()
     add_stucture(portal)
+    disable_site_actions_viewlet(portal)
 
 
 def uninstall(context):
@@ -39,84 +38,14 @@ def uninstall(context):
     # Do something at the end of the uninstallation of this package.
 
 
-def add_taxonomies():
-    current_lang = api.portal.get_default_language()[:2]
-    # dossiers, patrimoine, villages, periodes
-    data_dossiers = {
-        "taxonomy": "dossiers",
-        "field_title": translate(_("Dossiers"), target_language=current_lang),
-        "field_description": "",
-        "default_language": "fr",
-    }
-
-    data_patrimoine = {
-        "taxonomy": "patrimoine",
-        "field_title": translate(_("Patrimoine"), target_language=current_lang),
-        "field_description": "",
-        "default_language": "fr",
-    }
-
-    data_villages = {
-        "taxonomy": "villages",
-        "field_title": translate(_("Villages"), target_language=current_lang),
-        "field_description": "",
-        "default_language": "fr",
-    }
-
-    data_periodes = {
-        "taxonomy": "periodes",
-        "field_title": translate(_("Periodes"), target_language=current_lang),
-        "field_description": "",
-        "default_language": "fr",
-    }
-
-    portal = api.portal.get()
-    sm = portal.getSiteManager()
-
-    dossiers_item = "collective.taxonomy.dossiers"
-    patrimoine_item = "collective.taxonomy.patrimoine"
-    villages_item = "collective.taxonomy.villages"
-    periodes_item = "collective.taxonomy.periodes"
-    utility_dossiers = sm.queryUtility(ITaxonomy, name=dossiers_item)
-    utility_patrimoine = sm.queryUtility(ITaxonomy, name=patrimoine_item)
-    utility_villages = sm.queryUtility(ITaxonomy, name=villages_item)
-    utility_periodes = sm.queryUtility(ITaxonomy, name=periodes_item)
-    if (
-        utility_dossiers
-        and utility_patrimoine
-        and utility_villages
-        and utility_periodes
-    ):
-        return
-
-    create_taxonomy_object(data_dossiers)
-    create_taxonomy_object(data_patrimoine)
-    create_taxonomy_object(data_villages)
-    create_taxonomy_object(data_periodes)
-
-
 def add_stucture(portal):
     # Folder professionals
     if "explorer" not in portal:
-        obj = create_content("Folder", _("explorer"), portal)
-        subtyper = obj.restrictedTraverse("@@faceted_subtyper")
-        subtyper.enable()
+        obj = create_content("Folder", _("Explorer"), portal)
+        _activate_dashboard_navigation(obj, True, "/faceted/config/explorer.xml")
         layout = FacetedLayout(obj)
         layout.update_layout(layout="faceted-map")
         _publish(obj)
-
-
-def create_taxonomy_object(data_tax):
-    taxonomy = registerTaxonomy(
-        api.portal.get(),
-        name=data_tax["taxonomy"],
-        title=data_tax["field_title"],
-        description=data_tax["field_description"],
-        default_language=data_tax["default_language"],
-    )
-
-    del data_tax["taxonomy"]
-    taxonomy.registerBehavior(**data_tax)
 
 
 def create_content(type_content, title, parent):
@@ -126,7 +55,7 @@ def create_content(type_content, title, parent):
 
 def _activate_dashboard_navigation(context, configuration=False, path=None):
     subtyper = context.restrictedTraverse("@@faceted_subtyper")
-    if subtyper.is_faceted:
+    if subtyper.is_faceted():
         return
     subtyper.enable()
     if configuration and path:
@@ -140,3 +69,15 @@ def _activate_dashboard_navigation(context, configuration=False, path=None):
 def _publish(obj):
     if api.content.get_state(obj) != "published":
         api.content.transition(obj, transition="publish")
+
+
+def disable_site_actions_viewlet(context):
+    """Disable the plone.site_actions viewlet"""
+    storage = getUtility(IViewletSettingsStorage)
+    skinname = context.getCurrentSkinName()
+    manager = "plone.portalheader"
+    viewlet_id = "plone.site_actions"
+    hidden = list(storage.getHidden(manager, skinname))
+    if viewlet_id not in hidden:
+        hidden.append(viewlet_id)
+        storage.setHidden(manager, skinname, tuple(hidden))
