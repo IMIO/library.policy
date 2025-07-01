@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0.6 (unreleased)
+2.0.6 (2025-07-01)
 ------------------
 
 - BIBLI-81 : Improve installation (Faceted, Taxonomies)
