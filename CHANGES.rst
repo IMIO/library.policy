@@ -5,6 +5,9 @@ Changelog
 2.0.7 (unreleased)
 ------------------
 
+- Migrate to Plone 6.1.4
+  [boulch]
+
 - Migrate to Plone 6.1.3
   [boulch]
 
