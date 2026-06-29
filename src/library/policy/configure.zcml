@@ -30,6 +30,7 @@
   <include package="collective.easyform" />
   <include package="collective.preventactions" />
   <include package="collective.plausible" />
+  <include package="pas.plugins.kimug" />
   <include package="collective.z3cform.select2" file="minimal.zcml" />
   <include package="plone.formwidget.recaptcha" />
 

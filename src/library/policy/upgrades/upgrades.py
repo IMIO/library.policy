@@ -3,6 +3,7 @@
 from eea.facetednavigation.interfaces import ICriteria
 from eea.facetednavigation.layout.layout import FacetedLayout
 from eea.facetednavigation.subtypes.interfaces import IFacetedNavigable
+from library.policy.setuphandlers import configure_login_modal
 from library.policy.utils import configure_faceted
 from plone import api
 from plone.app.upgrade.utils import loadMigrationProfile
@@ -85,3 +86,13 @@ def uninstall_plone_patternslib(context):
 def uninstall_library_theme(context):
     installer = get_installer(context)
     installer.uninstall_product("library.theme")
+
+
+def install_kimug(context):
+    setup_tool = getToolByName(context, "portal_setup")
+    setup_tool.runAllImportStepsFromProfile("profile-pas.plugins.kimug:default")
+
+
+def set_login_modal(context):
+    portal = api.portal.get()
+    configure_login_modal(portal)

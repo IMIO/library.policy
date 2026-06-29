@@ -64,6 +64,7 @@ setup(
         "iaweb.mosaic",
         "collective.plausible",
         "plone.formwidget.recaptcha",
+        "pas.plugins.kimug",
     ],
     extras_require={
         "test": [

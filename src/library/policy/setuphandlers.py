@@ -7,6 +7,7 @@ from Products.CMFPlone.interfaces import INonInstallable
 from zope.component import getUtility
 from zope.interface import implementer
 
+import json
 import os
 
 
@@ -31,6 +32,7 @@ def post_install(context):
     portal = api.portal.get()
     add_stucture(portal)
     disable_site_actions_viewlet(portal)
+    configure_login_modal(portal)
 
 
 def uninstall(context):
@@ -69,6 +71,25 @@ def _activate_dashboard_navigation(context, configuration=False, path=None):
 def _publish(obj):
     if api.content.get_state(obj) != "published":
         api.content.transition(obj, transition="publish")
+
+
+def configure_login_modal(portal):
+    """Set the modal property on the portal_actions/user/login action."""
+    actions_tool = api.portal.get_tool("portal_actions")
+    login = actions_tool.user.login
+    value = json.dumps(
+        {
+            "prependContent": ".portalMessage",
+            "title": "Log in",
+            "width": "26em",
+            "actionOptions": {"redirectOnResponse": True},
+            "loadLinksWithinModal": "False",
+        }
+    )
+    if login.hasProperty("modal"):
+        login._updateProperty("modal", value)
+    else:
+        login._setProperty("modal", value, "text")
 
 
 def disable_site_actions_viewlet(context):

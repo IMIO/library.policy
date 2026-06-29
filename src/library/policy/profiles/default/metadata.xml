@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
-  <version>1015</version>
+  <version>1017</version>
   <dependencies>
     <dependency>profile-collective.plausible:default</dependency>
     <dependency>profile-eea.facetednavigation:default</dependency>
@@ -18,5 +18,6 @@
     <dependency>profile-plone.app.theming:default</dependency>
     <dependency>profile-plone.formwidget.recaptcha:default</dependency>
     <dependency>profile-library.core:default</dependency>
+    <dependency>profile-pas.plugins.kimug:default</dependency>
   </dependencies>
 </metadata>

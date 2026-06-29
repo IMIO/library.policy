@@ -2,10 +2,14 @@ Changelog
 =========
 
 
-3.0.1 (unreleased)
+3.1.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Set the modal property on the login action (portal_actions/user/login) at install and via an upgrade step
+  [remdub]
+
+- Install pas.plugins.kimug by default and add an upgrade step to install it on existing sites
+  [remdub]
 
 
 3.0.0 (2026-07-08)
