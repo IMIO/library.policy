@@ -210,4 +210,22 @@
     handler=".upgrades.uninstall_library_theme"
     />
 
+  <genericsetup:upgradeStep
+    source="1015"
+    destination="1016"
+    title="Install pas.plugins.kimug"
+    description="Install pas.plugins.kimug add-on on existing sites"
+    profile="library.policy:default"
+    handler=".upgrades.install_kimug"
+    />
+
+  <genericsetup:upgradeStep
+    source="1016"
+    destination="1017"
+    title="Set login action modal property"
+    description="Set portal_actions/user/login modal (adds loadLinksWithinModal)"
+    profile="library.policy:default"
+    handler=".upgrades.set_login_modal"
+    />
+
 </configure>
