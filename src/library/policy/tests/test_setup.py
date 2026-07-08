@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """Setup tests for this package."""
+
 from library.policy.testing import LIBRARY_POLICY_INTEGRATION_TESTING  # noqa
 from plone import api
 from plone.app.testing import setRoles

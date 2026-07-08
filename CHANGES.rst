@@ -5,6 +5,12 @@ Changelog
 2.0.7 (unreleased)
 ------------------
 
+- Switch to PEP 420 native namespace package.
+  [remdub]
+
+- Migrate dev environment to Plone 6.1.5, buildout 5
+  [remdub]
+
 - Migrate to Plone 6.1.4
   [boulch]
 
@@ -50,7 +56,7 @@ Changelog
 2.0.2 (2025-01-14)
 ------------------
 
-- Reinstall collective.behavior.gallery 
+- Reinstall collective.behavior.gallery
   [boulch]
 
 2.0.1 (2024-12-12)
