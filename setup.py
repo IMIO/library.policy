@@ -15,7 +15,7 @@ long_description = "\n\n".join(
 
 setup(
     name="library.policy",
-    version="2.0.7.dev0",
+    version="3.0.0",
     description="Policy for the installation of buildout.library",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
