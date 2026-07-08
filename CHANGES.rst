@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-3.1.0 (unreleased)
+3.1.0 (2026-07-08)
 ------------------
 
 - Set the modal property on the login action (portal_actions/user/login) at install and via an upgrade step
