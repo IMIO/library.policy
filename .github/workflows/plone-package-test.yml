@@ -1,45 +1,19 @@
 name: Tests
 
-on: push
+on:
+  push:
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        include:
-          - python-version: "3.9"
-            plone-version: "6.0"
-          - python-version: "3.10"
-            plone-version: "6.0"
-    steps:
-      # git checkout
-      - uses: actions/checkout@v2
-
-      # python setup
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v2
-        with:
-          python-version: ${{ matrix.python-version }}
-
-      # python eggs cache
-      - name: Cache eggs
-        uses: actions/cache@v4
-        env:
-          cache-name: cache-eggs
-        with:
-          path: ./eggs
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ matrix.python-version }}-${{ matrix.plone-version }}
-
-      # python install
-      - name: pip install
-        run: pip install -r requirements.txt
-
-      # buildout
-      - name: buildout
-        run: buildout -t 10 -c buildout.cfg
-
-      # test
-      - name: test
-        run: bin/test
+  full-test:
+    uses: IMIO/gha-workflows/.github/workflows/package-full-test.yml@v1
+    secrets:
+      mattermost_webhook_url: ${{ secrets.SMARTWEB_MATTERMOST_WEBHOOK_URL }}
+    with:
+      check_path: |
+        library/policy
+      python_versions: '["3.12", "3.13"]'
+      runner_label: gha-runners-smartweb
+      upload_to_coveralls: true
