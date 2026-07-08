@@ -26,7 +26,6 @@ setup(
         "Framework :: Plone :: Addon",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3.12",
-        "Programming Language :: Python :: 3.13",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],

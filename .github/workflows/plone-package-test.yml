@@ -14,6 +14,7 @@ jobs:
     with:
       check_path: |
         library/policy
-      python_versions: '["3.12", "3.13"]'
+      coverage_python_version: '3.12'
+      python_versions: '["3.12"]'
       runner_label: gha-runners-smartweb
       upload_to_coveralls: true
