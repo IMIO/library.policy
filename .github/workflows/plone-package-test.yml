@@ -13,7 +13,7 @@ jobs:
       mattermost_webhook_url: ${{ secrets.SMARTWEB_MATTERMOST_WEBHOOK_URL }}
     with:
       check_path: |
-        library/policy
+        bibliotheca/policy
       coverage_python_version: '3.12'
       python_versions: '["3.12"]'
       runner_label: gha-runners-smartweb

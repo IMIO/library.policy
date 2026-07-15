@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Installer for the library.policy package."""
+"""Installer for the bibliotheca.policy package."""
 
 from setuptools import find_namespace_packages
 from setuptools import setup
@@ -14,9 +14,9 @@ long_description = "\n\n".join(
 
 
 setup(
-    name="library.policy",
+    name="bibliotheca.policy",
     version="3.1.1.dev0",
-    description="Policy for the installation of buildout.library",
+    description="Policy for the installation of buildout.bibliotheca",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
@@ -32,7 +32,7 @@ setup(
     keywords="Python Plone",
     author="Nicolas Demonte",
     author_email="support@imio.be",
-    url="https://pypi.python.org/pypi/library.policy",
+    url="https://pypi.python.org/pypi/bibliotheca.policy",
     license="GPL version 2",
     packages=find_namespace_packages("src", exclude=["ez_setup"]),
     package_dir={"": "src"},
@@ -55,7 +55,7 @@ setup(
         "plone.app.mosaic",
         "plone.app.theming",
         "plone.app.themingplugins",
-        "library.core",
+        "bibliotheca.core",
         "collective.behavior.banner",
         "collective.behavior.gallery",
         "collective.easyform",

@@ -2,17 +2,17 @@
    If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
    This text does not appear on pypi or github. It is a comment.
 
-.. image:: https://github.com/IMIO/library.policy/workflows/Tests/badge.svg
-    :target: https://github.com/IMIO/library.policy/actions?query=workflow%3ATests
+.. image:: https://github.com/IMIO/bibliotheca.policy/workflows/Tests/badge.svg
+    :target: https://github.com/IMIO/bibliotheca.policy/actions?query=workflow%3ATests
     :alt: CI Status
 
-.. image:: https://coveralls.io/repos/github/IMIO/library.policy/badge.svg?branch=master
-    :target: https://coveralls.io/github/IMIO/library.policy?branch=master
+.. image:: https://coveralls.io/repos/github/IMIO/bibliotheca.policy/badge.svg?branch=master
+    :target: https://coveralls.io/github/IMIO/bibliotheca.policy?branch=master
     :alt: Coveralls
 
-==============
-library.policy
-==============
+==================
+bibliotheca.policy
+==================
 
 Tell me what your product does
 
@@ -46,14 +46,14 @@ This product has been translated into
 Installation
 ------------
 
-Install library.policy by adding it to your buildout::
+Install bibliotheca.policy by adding it to your buildout::
 
     [buildout]
 
     ...
 
     eggs =
-        library.policy
+        bibliotheca.policy
 
 
 and then running ``bin/buildout``
@@ -62,8 +62,8 @@ and then running ``bin/buildout``
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/collective/library.policy/issues
-- Source Code: https://github.com/collective/library.policy
+- Issue Tracker: https://github.com/collective/bibliotheca.policy/issues
+- Source Code: https://github.com/collective/bibliotheca.policy
 - Documentation: https://docs.plone.org/foo/bar
 
 

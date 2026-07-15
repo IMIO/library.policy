@@ -5,7 +5,8 @@ Changelog
 3.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Rename to bibliotheca.policy
+  [bsuttor]
 
 
 3.1.0 (2026-07-08)

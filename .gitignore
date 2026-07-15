@@ -33,6 +33,6 @@ report.html
 !.gitignore
 !.gitkeep
 !.travis.yml
-!src/library
+!src/bibliotheca
 share/
 pyvenv.cfg

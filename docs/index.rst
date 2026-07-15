@@ -1,3 +1,3 @@
-==============library.policy
+==============bibliotheca.policy
 ==============
 User documentation

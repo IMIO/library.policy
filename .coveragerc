@@ -1,6 +1,6 @@
 [report]
 include =
-    src/library/*
+    src/bibliotheca/*
 omit =
     */test*
     */upgrades*
