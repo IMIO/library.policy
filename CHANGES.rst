@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-3.1.1 (unreleased)
+3.1.1 (2026-07-15)
 ------------------
 
 - Rename to bibliotheca.policy
