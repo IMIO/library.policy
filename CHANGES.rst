@@ -5,7 +5,13 @@ Changelog
 3.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add upgrade step (1017 -> 1018) to fix ``library.*`` -> ``bibliotheca.*`` rename
+  artifacts left in existing ZODBs: rewrite the stale ``patrimoine`` FTI schema
+  string (fixes a ``RecursionError`` on ``lookupSchema``), purge the orphaned
+  ``ILibraryCoreLayer`` / ``ILibraryPolicyLayer`` browser layers, and register
+  the renamed ``IBibliothecaCoreLayer`` / ``IBibliothecaPolicyLayer`` layers so
+  views/viewlets/tiles bound to them (e.g. the ``existingcontent`` tile) work.
+  [remdub]
 
 
 3.1.1 (2026-07-15)

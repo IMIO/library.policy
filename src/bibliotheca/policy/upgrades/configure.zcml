@@ -228,4 +228,13 @@
     handler=".upgrades.set_login_modal"
     />
 
+  <genericsetup:upgradeStep
+    source="1017"
+    destination="1018"
+    title="Fix library.* -> bibliotheca.* rename artifacts"
+    description="Rewrite stale FTI schema strings and purge orphaned library.* browser layers left in the ZODB by the package rename"
+    profile="bibliotheca.policy:default"
+    handler=".upgrades.fix_library_rename"
+    />
+
 </configure>
