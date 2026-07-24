@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-3.1.2 (unreleased)
+3.1.2 (2026-07-24)
 ------------------
 
 - Add upgrade step (1017 -> 1018) to fix ``library.*`` -> ``bibliotheca.*`` rename
