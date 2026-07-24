@@ -10,7 +10,10 @@ from plone.app.upgrade.utils import loadMigrationProfile
 from Products.CMFCore.utils import getToolByName
 from Products.CMFPlone.utils import get_installer
 
+import logging
 import os
+
+logger = logging.getLogger("bibliotheca.policy")
 
 
 def reload_gs_profile(context):
@@ -140,7 +143,11 @@ def fix_library_rename(context):
             SCHEMA_CACHE.invalidate(type_id)
         SCHEMA_CACHE.clear()
     except Exception:  # pragma: no cover - best effort
-        pass
+        logger.exception(
+            "fix_library_rename: failed to invalidate the Dexterity "
+            "schema cache for types %r; continuing upgrade.",
+            fixed_types,
+        )
 
     # 3. Purge the orphaned (Broken) browser-layer utilities.
     from plone.browserlayer.interfaces import ILocalBrowserLayerType
